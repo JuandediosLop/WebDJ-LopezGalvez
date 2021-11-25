@@ -1,0 +1,605 @@
+
+$fuenteTitulo: 'Poppins', sans-serif;
+$fuenteCuerpo:'Sintony', sans-serif;
+$colorPrimario: #000;
+$colorSecundario:#fff;
+$colorTercero: #ffed00;
+$colorCuarto: #161413;
+$texto: 2rem;
+
+html {
+    font-family: $fuenteCuerpo;
+    box-sizing: border-box;
+    font-size: 62.5%;   
+ 
+}
+
+body{
+    background-color: $colorPrimario;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.noPaddin{
+    padding: 0;
+}
+
+a{
+    font-family: $fuenteTitulo;
+    text-decoration: none;
+    color: $colorSecundario;
+    font-size: $texto +0.2rem;
+}
+
+p{
+    color: $colorSecundario;
+    font-size: $texto+ 0.2rem;
+}
+/*Fin Globales*/
+.wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width: 185rem; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+  }
+  
+h1{
+    font-family: $fuenteTitulo;
+    color: $colorTercero;
+    font-size: $texto +1.2rem;
+    text-align: center;
+}
+
+h2{
+    font-family: $fuenteTitulo;
+    font-size: $texto +0.2rem;
+    color: $colorSecundario;
+    padding: $texto;
+}
+
+h3{
+    font-family: $fuenteTitulo;
+    font-size: $texto;
+    color: $colorSecundario;
+    text-align: center;
+}
+.centrarContenido{
+    text-align: center;
+}
+
+.navbar{ 
+    li{
+        padding: 0 1.2rem;
+    }
+}
+
+/* Seccion contenido*/
+
+.flexEncabezados{
+    text-align: center;
+     
+}
+@media only screen and  (max-width: 480px) {
+    .flexEncabezados
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }    
+}
+
+
+@media only screen and  (min-width: 768px) {
+    .flexEncabezados
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    } 
+}
+
+@media only screen and  (min-width: 1200px) {
+    .flexEncabezados
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+
+    }   
+}
+
+
+/*Pagina Inicio*/
+
+
+.portada{
+    text-align: center;
+    background-image: url(../img/img-inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100% ;
+    height: 500px;
+
+    h1{
+        margin: 0;
+        margin-top: 1rem;
+        padding-top: 3rem;
+        }
+    a{
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid $colorSecundario;
+        border-radius: 10px;
+        padding: 1rem 1rem;
+        margin: 15px;
+    }
+}
+
+.btn{
+    font-size: 2rem;
+}
+.row{
+    text-align: center;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 300px) { 
+    .portada{
+        height: 488px;
+        h1{
+            padding-top: 3rem;
+        }
+        .portada--centrar{
+            padding: 0;
+        }
+    }
+   
+    .seccionEventos,
+    .seccionSobreMi{
+
+        height: 820px;
+        
+        .seccionEventos__img,
+        .secccionSobreMi__img{
+            width: 30rem;
+            height: 27rem;  
+        }
+   
+    }
+    .row{
+        text-align: center;
+    }
+    .col{
+        padding: 1rem 0;
+    }
+ }
+
+@media (min-width: 480px) { 
+    .portada{
+        height: 480px;
+        h1{
+            padding-top: 3rem;
+        }
+        .portada--centrar{
+            padding: 0;
+        }
+    }
+
+   
+    .seccionEventos,
+    .seccionSobreMi{
+
+        height: 695px;
+        .seccionEventos__img,
+        .secccionSobreMi__img{
+            width: 30rem;
+            height: 27rem;
+        }
+   
+    }
+    .row{
+        text-align: center;
+    }
+    .col{
+        padding: 1rem 0;
+    }
+ 
+ }
+
+@media (min-width: 768px) { 
+    .portada{
+        height: 580px;
+        h1{
+            padding-top: 6rem;
+        }
+        .portada-centrar{
+            padding: 0;
+        
+        }
+    }
+    
+
+    .seccionEventos,
+    .seccionSobreMi{
+        height: 450px;
+    }
+ }
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .portada{
+        height: 750px;
+
+        .portada--centrar{
+            padding: 10rem;
+        }
+    }
+  
+    .seccionEventos,
+    .seccionSobreMi{
+        height: 480px;
+    } 
+}
+
+
+.seccionEventos,
+.seccionSobreMi {
+    .seccionEventos__p,
+    .seccionSobreMi__p{
+        text-align: justify;
+        padding: 0 2rem;
+    }
+    .seccionEventos__img,
+    .seccionSobreMi__img{
+        width: 35rem;
+        height: 32rem;
+    }
+    .seccionEventos__h2,
+    .seccionSobreMi__h2{
+        color: $colorTercero;
+        font-size: 3rem;
+        text-align: center; 
+    }
+}
+
+.seccionSobreMi{
+    background-color: $colorCuarto;
+    .seccionSonbreMi_h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
+
+.portada__paraTransicion:hover {
+    transition: 2s;
+    font-size: 3rem;
+  }
+/*Fin pagina Inicio*/
+
+/*Inicio pagina musica*/
+.canciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+@media only screen and  (max-width: 480px) {
+    .canciones{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-top: 1rem;
+    }    
+}
+
+
+@media only screen and  (min-width: 768px) {
+    .canciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1rem;
+    }    
+}
+
+@media only screen and  (min-width: 1200px) {
+    .canciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 1rem;
+    }    
+}
+
+.seccion{
+    justify-self: center;
+}
+
+.introMusica__img{
+    width: 50rem;
+    height: 35rem;
+    padding: 1rem;
+}
+
+@media only screen and  (max-width: 480px) {
+    .introMusica{
+        height: 550px;
+        padding-top: 3rem;
+        text-align: center;
+        
+        .introMusica__img{
+            width: 35rem;
+            height: 20rem;
+        }
+    }
+}
+
+@media only screen and  (min-width: 768px) {
+    .introMusica{
+        height: 650px;
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and  (min-width: 1200px) {
+    .introMusica{
+        height: 550px;
+        padding-top: 3rem;
+    }
+
+}
+
+
+.seccion{
+    height: 50rem;
+    .seccion__img{
+        padding: 2rem 0rem;
+    }
+}
+
+.seccion,
+.secciones{
+    .seccion__img,
+    .secciones__img{
+        width: 35rem;
+        height: 31rem;
+    }
+}
+.color{
+    background-color: $colorCuarto;
+}
+
+.animate__animated .animate__fadeInUp{
+    --animate-duration: 5s;
+    
+}
+
+/*Fin pagina musica*/
+/*Inicio pagina Blog*/
+.introBlog{
+    height: 560px;
+
+    .introBlog__img{
+        width: 30rem;
+        height: 30rem;
+    }
+
+}
+
+.secciones{
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media only screen and  (max-width: 480px) {
+    .introBlog{
+        height: 695px;
+        .introBlog__img{
+            width: 35rem;
+        height: 35rem;
+        }
+    }
+
+    .secciones{
+        height: 74rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+}
+
+
+@media only screen and  (min-width: 768px) {
+    .introBlog{
+        height: 600px;
+        .introBlog__img{
+            width: 35rem;
+            height: 35rem;
+        }
+    }
+ 
+    .secciones{
+            height: 65rem;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+     
+    }
+}
+@media only screen and  (min-width: 1200px) {
+    .introBlog{
+        height: 500px;
+    }
+    .secciones{
+        height: 40rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+
+/*Fin pagina Blog*/
+
+/*Inicio pagina Groove Move*/
+
+.heroGrooveMove img{
+    width: 55rem;
+    height: 40rem;
+}
+.contenidoGroove{
+    text-align: center;
+
+    background-image: url(../img/moveFondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100% ;
+
+    p{
+        padding: 8rem 2rem;
+        text-align: justify;
+    }
+}
+
+@media only screen and  (max-width: 480px) {
+    .heroGrooveMove{
+        height: 700px;
+        img{
+            width: 45rem;
+            height: 30rem; 
+        }
+    }
+
+    .contenidoGroove{
+        height: 970px;
+        p{
+            padding: 4rem 2rem;
+            text-align: justify;
+        }
+    }
+
+}
+
+@media only screen and  (min-width: 768px) {
+    
+    .heroGrooveMove{
+        height: 580px;
+        img{
+            width: 45rem;
+            height: 30rem; 
+        }
+
+    }
+    .contenidoGroove{
+        height: 670px;
+
+        p{
+            padding: 2rem 2rem;
+            text-align: justify;
+        }
+    }
+
+}
+
+@media only screen and  (min-width: 1200px) {
+    .heroGrooveMove{
+        height: 500px;
+
+        img{
+            width: 55rem;
+            height: 40rem;
+        }
+    }
+
+    .contenidoGroove{
+        height: 650px;
+        p{
+            padding: 16rem 0;
+            text-align: center;
+        }
+    }
+
+}
+
+/*Fin Pagina Groove Move*/
+
+/*Inicio pagina contacto*/
+.heroContacto{
+    text-align: center;
+    height: 70rem;
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100% ;
+    color: var(--colorSecundario);
+    font-size: 1.7rem;
+    padding: 2rem 0;
+
+}
+
+
+
+.formularioContacto {
+    label
+    {
+    padding: 0.5rem 0;
+    color: $colorSecundario;
+    }
+    input, select, textarea{
+        margin: 1.5rem 0;
+    }
+}
+
+.botonEnviar{
+    background-color: #ffed00;
+    font-size: 2rem;
+    font-family: var(--fuenteTitulo);
+}
+
+/*Fin pagina contacto*/
+/*Fin secccion contenido*/
+
+/*Sección footer*/
+footer{ 
+    
+    width: 100%;
+    padding-top:5px;
+}
+
+.redesSociales{
+    text-align: center;
+
+    .redesSociales__a {
+         margin: 0 1rem;
+    }
+    p{
+        font-family: $fuenteTitulo;
+    }
+    .redesSociales--centrarContenido{
+        text-align: center;
+    }
+}
+
+/*Fin seccion footer*/
