@@ -154,9 +154,7 @@ h3{
     text-align: center;
 }
 
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 300px) { 
+@media (max-width: 300px) { 
     .portada{
         height: 488px;
         h1{
@@ -172,10 +170,8 @@ h3{
 
         height: 820px;
         
-        .seccionEventos__img,
-        .secccionSobreMi__img{
-            width: 30rem;
-            height: 27rem;  
+        img{
+            height: 1rem;
         }
    
     }
@@ -204,8 +200,7 @@ h3{
 
         height: 695px;
         .seccionEventos__img,
-        .secccionSobreMi__img{
-            width: 30rem;
+        .seccionSobreMi__img{
             height: 27rem;
         }
    

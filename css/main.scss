@@ -1,0 +1,415 @@
+
+$fuenteTitulo: 'Poppins', sans-serif;
+$fuenteCuerpo:'Sintony', sans-serif;
+$colorPrimario: #000;
+$colorSecundario:#fff;
+$colorTercero: #ffed00;
+$colorCuarto: #161413; 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $fuenteCuerpo;
+    overflow-x: hidden;
+    background-color: $colorPrimario;
+}
+
+.colorPrimario{
+    background-color: $colorPrimario;
+}
+.colorSeccion{
+    background-color: $colorCuarto;
+}
+h1{
+    font-family: $fuenteTitulo;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: $colorTercero;
+}
+
+/*===================MENU==========================*/
+#menu{
+    background-color: $colorPrimario;
+
+    li > a{
+        font-size: 18px;
+        font-weight: bold;
+        color: $colorSecundario;
+        font-family: $fuenteTitulo;
+    }
+
+    li > a:hover{
+        font-size: 18px;
+        font-weight: bold;
+        color: $colorTercero;
+    }
+
+    .active{
+        font-size: 18px;
+        font-weight: bold;
+        color: $colorTercero;
+    }
+}
+
+/*===================SECCION INDEX==========================*/
+#intro{
+    max-height: 54rem;
+    background-image: url(../img/img-inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 23.13vh 0;
+}
+
+.contenedor{
+    padding: 4vh;
+    text-align: center;
+    color: $colorSecundario;
+    font-size: 1.4rem;
+    margin: 0;
+
+    h2{
+        color: $colorTercero;
+        font-family: $fuenteTitulo;    
+    }
+    
+}
+.secciones{
+    img{
+        width: 50%;
+        text-align: end;    
+    }
+    p{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*=================== FOOTER==========================*/
+footer{
+    padding: 4vh;
+    font-family: $fuenteTitulo;
+    color: $colorSecundario;
+    font-size: 1.4rem;
+}
+.redesSociales{
+    text-align: center;
+    a{
+        margin: 0 1rem;
+    }
+}
+
+/*===================SECCION MUSICA I==========================*/
+.introMusica{
+    height: 550px;
+    padding-top: 3rem;
+    text-align: center;
+
+    img{
+        width: 50rem;
+        height: 35rem;
+        padding: 1rem; 
+    }
+}
+
+.canciones{
+    display: grid;
+    margin-top: 1rem;
+    text-align: center;
+  
+    img{
+        height: 350px;
+        width: 350px;    
+        padding: 1rem 0;
+    }
+    .seccion{
+        padding: 1rem 0;
+    }
+
+    h3{
+        font-family: $fuenteTitulo;
+        font-size: 21px; 
+        text-align: center;
+        color: $colorTercero;
+    }   
+}
+/*===================SECCION Groove Move ==========================*/
+.contenidoGroove{   
+    text-align: center;
+    background-image: url(../img/moveFondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 70%;
+        padding: 25vh 1.2rem;
+        color: $colorSecundario;
+    }
+}
+/*===================SECCION contacto ==========================*/
+.heroContacto{
+    text-align: center;
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--colorSecundario);
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+.formularioContacto {
+    label
+    {
+    padding: 0.5rem 0;
+    color: $colorSecundario;
+    }
+    .input, textarea{
+        margin: 1rem 0;
+        text-align: center;
+        width: 20%;
+    }
+    button{
+        width: 10%;
+        font-size: 1.2rem;
+    }
+}
+
+
+/*===================MEDIA QUERIES==========================*/
+
+@media (max-width:430px){
+
+    .contenedor{
+        padding: 1.2rem;
+        margin: 0.5rem 0rem;
+    }
+    .secciones{
+        flex-direction: column;
+        margin: 0.5rem 0;   
+
+        img{
+            width: 100%;
+            padding: 10px 0;
+        }
+        p{
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+    footer{
+        padding: 1.2rem;
+    }
+   
+    #intro{
+        padding: 8vh 0 ;
+    }
+
+    /*----- Musica ----- */
+    .canciones{
+        grid-template-columns: 1fr;
+
+        img{
+            height: 290px;
+            width: 290px;    
+            padding: 1rem 0;
+        }
+        iframe{
+            width: 70%;
+        }
+    }
+
+    /*----- Groove Move ----- */
+    .contenidoGroove{
+        p{
+            width: 100%;
+            padding: 5vh 1.2rem;
+        }
+    }
+
+    /*----- Contacto ----- */
+    .formularioContacto{
+        .input, textarea{
+            width: 85%;
+        }
+        #checkbox{
+            margin-bottom: 2rem;
+            transform: scale(2);
+        }
+        button{
+            width: 40%;}
+
+    }
+}
+
+
+@media (min-width:431px){
+
+    .secciones{
+        flex-direction: column;
+        margin: 0.5rem 0;  
+
+        img{
+            width: 60%;
+            padding: 10px 0;
+        }
+    }
+
+    #intro{
+        padding: 8vh 0 ;
+    }
+
+    /*----- Musica ----- */
+    .canciones{
+        grid-template-columns: 1fr;
+
+        img{
+            height: 290px;
+            width: 290px;    
+            padding: 1rem 0;
+        }
+        iframe{
+            width: 70%;
+        }
+    }
+    /*----- Groove Move ----- */
+    .contenidoGroove{
+        p{
+            width: 95%;
+            padding: 10vh 1.2rem;
+        }
+    }
+    /*----- Contacto ----- */
+    .formularioContacto{
+        .input, textarea{
+            width: 65%;
+        }
+        #checkbox{
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+            transform: scale(2);
+        }
+        button{
+            width: 40%;}
+
+    }
+}
+
+@media (min-width:768px){
+    #intro{
+        padding: 8vh 0 ;
+    }
+    .secciones{
+        flex-direction: row;
+        margin: 0.5rem 0; 
+        img{
+            width: 85%;
+            padding: 10px 0;
+        }  
+    }
+
+    /*----- Musica ----- */
+    .canciones{
+        grid-template-columns: 1fr 1fr;
+
+        img{
+            height: 290px;
+            width: 290px;    
+            padding: 1rem 0;
+        }
+        iframe{
+            width: 75%;
+        }
+    }
+
+    /*----- Groove Move ----- */
+    .contenidoGroove{
+        p{
+            width: 95%;
+            padding: 10vh 1.2rem;
+        }
+    }
+
+}
+
+
+@media (min-width: 992px) { 
+    .secciones{ 
+        img{
+            width: 65%;
+            padding: 10px 0;
+        }
+    }
+    /*----- Contacto ----- */
+    .formularioContacto{
+        .input, textarea{
+            width: 45%;
+        }
+        #checkbox{
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+            transform: scale(2);
+        }
+        button{
+            width: 30%;}
+
+    }
+}
+
+@media (min-width: 1200px) { 
+    
+    .secciones{ 
+        img{
+            width: 50%;
+            padding: 10px 0;
+        }
+    }
+    .canciones{
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img{
+            height: 350px;
+            width: 350px;    
+            padding: 1rem 0;
+        }
+        iframe{
+            width: 73%;
+        }
+    }
+
+    /*----- Groove Move ----- */
+    .contenidoGroove{
+        p{
+            width: 70%;
+            padding: 18vh 1.2rem;
+        }
+    }
+    /*----- Contacto ----- */
+    .formularioContacto{
+        .input, textarea{
+            width: 23%;
+        }
+        #checkbox{
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+            transform: scale(2);
+        }
+        button{
+            width: 15%;}
+
+    }
+}

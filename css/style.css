@@ -167,8 +167,7 @@ h3 {
   text-align: center;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 300px) {
+@media (max-width: 300px) {
   .portada {
     height: 488px;
   }
@@ -182,12 +181,9 @@ h3 {
   .seccionSobreMi {
     height: 820px;
   }
-  .seccionEventos .seccionEventos__img,
-  .seccionEventos .secccionSobreMi__img,
-  .seccionSobreMi .seccionEventos__img,
-  .seccionSobreMi .secccionSobreMi__img {
-    width: 30rem;
-    height: 27rem;
+  .seccionEventos img,
+  .seccionSobreMi img {
+    height: 1rem;
   }
   .row {
     text-align: center;
@@ -212,10 +208,9 @@ h3 {
     height: 695px;
   }
   .seccionEventos .seccionEventos__img,
-  .seccionEventos .secccionSobreMi__img,
+  .seccionEventos .seccionSobreMi__img,
   .seccionSobreMi .seccionEventos__img,
-  .seccionSobreMi .secccionSobreMi__img {
-    width: 30rem;
+  .seccionSobreMi .seccionSobreMi__img {
     height: 27rem;
   }
   .row {
