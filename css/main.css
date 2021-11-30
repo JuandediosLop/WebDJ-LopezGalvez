@@ -268,7 +268,7 @@ footer {
     padding: 10px 0;
   }
   #intro {
-    padding: 8vh 0;
+    padding: 10vh 0;
   }
   /*----- Musica ----- */
   .canciones {
@@ -305,7 +305,7 @@ footer {
 
 @media (min-width: 768px) {
   #intro {
-    padding: 8vh 0;
+    padding: 18vh 0;
   }
   .secciones {
     -webkit-box-orient: horizontal;
@@ -339,6 +339,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  #intro {
+    padding: 20vh 0;
+  }
   .secciones img {
     width: 65%;
     padding: 10px 0;
@@ -359,6 +362,9 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  #intro {
+    padding: 23.13vh 0;
+  }
   .secciones img {
     width: 50%;
     padding: 10px 0;

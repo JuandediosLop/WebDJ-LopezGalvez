@@ -270,7 +270,7 @@ footer{
     }
 
     #intro{
-        padding: 8vh 0 ;
+        padding: 10vh 0 ;
     }
 
     /*----- Musica ----- */
@@ -311,7 +311,7 @@ footer{
 
 @media (min-width:768px){
     #intro{
-        padding: 8vh 0 ;
+        padding: 18vh 0 ;
     }
     .secciones{
         flex-direction: row;
@@ -348,6 +348,10 @@ footer{
 
 
 @media (min-width: 992px) { 
+
+    #intro{
+        padding: 20vh 0;
+    }
     .secciones{ 
         img{
             width: 65%;
@@ -371,7 +375,9 @@ footer{
 }
 
 @media (min-width: 1200px) { 
-    
+    #intro{
+        padding: 23.13vh 0;
+    }
     .secciones{ 
         img{
             width: 50%;
